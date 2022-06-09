@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    username: admin
+    url: jdbc:h2:mem:hungerbuddy
+    driverClassName: org.h2.Driver
+    password: admin
+  h2:
+    console:
+      enabled: 'true'
+  application:
+    name: online-food-delivery-system
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    defer-datasource-initialization: 'true'
+jwt:
+  jwtExpirationMs: '86400000'
+  jwtSecret: secretKey
