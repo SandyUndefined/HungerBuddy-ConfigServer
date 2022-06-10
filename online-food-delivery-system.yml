@@ -15,3 +15,11 @@ spring:
 jwt:
   jwtExpirationMs: '86400000'
   jwtSecret: secretKey
+eureka:
+  client:
+     register-with-eureka: true
+     fetch-registery: true
+     service-url:
+       default-zone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
