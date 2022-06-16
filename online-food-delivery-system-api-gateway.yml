@@ -9,4 +9,11 @@ eureka:
   instance:
     prefer-ip-address: true   
 
+spring:
+ cloud:
+   gateway:
+     discovery:
+       locator:
+         enabled: true
+         lowerCaseServiceId: true
     
