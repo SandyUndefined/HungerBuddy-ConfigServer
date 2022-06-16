@@ -1,4 +1,18 @@
 spring:
+  mail:
+    host: smtp.gmail.com
+    properties:
+      mail:
+        smtp:
+          socketFactory:
+            port: '587'
+            class: javax.net.ssl.SSLSocketFactory
+          auth: true
+          starttls:
+            enable: true
+    port: '587'
+    username: hungerbuddypod36@gmail.com
+    password: vtokltkthesxkhgw
   datasource:
     username: admin
     url: jdbc:h2:mem:hungerbuddy
